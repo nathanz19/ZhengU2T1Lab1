@@ -1,2 +1,37 @@
-package PACKAGE_NAME;public class Cat {
+// Cat class definition
+public class Cat {
+
+    // instance variables
+    private String name;
+    private int age;
+    private double weight;
+
+    // constructor
+    public Cat(String catName, int catAge, double catWeight) {
+        name = catName;
+        age = catAge;
+        weight = catWeight;
+    }
+
+    // method that introduces the Cat
+    public void introduce() {
+        String textAge = "";
+        if (age > 7) {
+            textAge = "I am an older cat.";
+        } else if (age < 7) {
+           textAge = "I am a younger cat.";
+        }
+        System.out.println("Hello my name is " + name + "and " + textAge);
+    }
+
+    // method that prints Cat info
+    public void printCatInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Weight: " + weight);
+    }
 }
+
+
+
+
